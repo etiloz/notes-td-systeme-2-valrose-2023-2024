@@ -2,7 +2,7 @@
 
 import signal
 
-# on veut reprogrammer os.wait
+# on veut reprogrammer os.wait (à peu près)
 
 def traitant(_signum, _ignore):
     global sigchld_received
