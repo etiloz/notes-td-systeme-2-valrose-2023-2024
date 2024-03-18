@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # rfd2, wfd2 = os.pipe()  # tube fils vers père
 
     # version avec tubes nommés
-    try:
+    try: # au cas où les tubes existent déjà 
         os.mkfifo("/tmp/tube1")
     except: pass
     try:
