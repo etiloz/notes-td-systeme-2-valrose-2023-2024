@@ -3,6 +3,7 @@
 import os
 
 fd_tube = os.open("tube", os.O_WRONLY)
+print("communication établie")
 while True:
     c = os.read(0, 1) # lit un octet sur l'entree standard
     if c == b'': break
